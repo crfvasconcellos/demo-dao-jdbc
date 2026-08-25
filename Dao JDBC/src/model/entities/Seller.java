@@ -59,7 +59,7 @@ public class Seller implements Serializable {
         return bithdate;
     }
 
-    public void setBithdate(Date bithdate) {
+    public void setBirthdate(Date bithdate) {
         this.bithdate = bithdate;
     }
 
