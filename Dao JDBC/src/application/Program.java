@@ -7,6 +7,7 @@ import model.entities.Seller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
     static void main() {
@@ -49,6 +50,14 @@ public class Program {
         sellerDao.update(seller);
         System.out.println("Update completed");
         System.out.println("After: " + seller);
+
+        System.out.println("\n=== Test 6: Seller Delete ===");
+        System.out.println("Enter id for delete test: ");
+        Scanner sc = new Scanner(System.in);
+        int idfordelete = sc.nextInt();
+
+        sellerDao.deleteById(idfordelete);
+        System.out.println("Deleted!");
 
 
     }
