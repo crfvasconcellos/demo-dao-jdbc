@@ -42,6 +42,14 @@ public class Program {
             System.out.println(newSeller);
         }
 
+        System.out.println("\n=== Test 5: Seller Update ===");
+        seller = sellerDao.findbyId(1);
+        System.out.println("Before: " + seller);
+        seller.setName("Maria Moraes");
+        sellerDao.update(seller);
+        System.out.println("Update completed");
+        System.out.println("After: " + seller);
+
 
     }
 }
