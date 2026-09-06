@@ -17,5 +17,9 @@ public class programDepartment {
             System.out.println(newDepartment);
         }
 
+        System.out.println("=== Test 2: Department DeletById ===");
+        departmentDao.deleteById(6);
+        System.out.println("Deletd ID");
+
     }
 }
