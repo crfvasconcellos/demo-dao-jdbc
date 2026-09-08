@@ -4,6 +4,8 @@ import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
 
+import java.util.List;
+
 public class programDepartment {
     static void main() {
 
@@ -31,5 +33,11 @@ public class programDepartment {
         dep2.setName("Clothes");
         departmentDao.update(dep2);
         System.out.println("After: " + dep2);
+
+        System.out.println("=== Test 5: Department findAll ===");
+        List<Department> list = departmentDao.findAll();
+        for (Department newdep : list){
+            System.out.println(newdep);
+        }
     }
 }
